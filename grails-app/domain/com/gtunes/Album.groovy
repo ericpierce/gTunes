@@ -7,4 +7,9 @@ class Album {
 
     static constraints = {
     }
+
+    @Override
+    String toString(){
+        title
+    }
 }
