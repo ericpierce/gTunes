@@ -23,10 +23,10 @@ environments {
         dataSource {
             dialect = "org.hibernate.dialect.SQLServerDialect"
             dbCreate = ""
-            driverClassName = "com.microsoft.sqlserver.jdbc.SQLServerDriver"
+            driverClassName = "net.sourceforge.jtds.jdbc.Driver"
             username = ""
             password = ""
-            url = "jdbc:sqlserver://localhost:1433;databaseName=1stcomp"
+            url = "jdbc:jtds:sqlserver://localhost:1433;databaseName=test;integratedSecurity=true;authenticationScheme=JavaKerberos"
         }
     }
     production {
